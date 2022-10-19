@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+/* 배너 */
+#banner{width: 100%;height: 762px;position: relative; overflow: hidden;}
+#banner .banner-img-wrap .banner-img{position: absolute;width: 100%;height: 100%;}
+#banner .banner-img-wrap .banner-img a{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);color: #fff;width: 100%;height: 100%;z-index: 10;}
+#banner .banner-img-wrap .banner-img1{background: url(../img/banner-img_1.jpg) no-repeat;left: 0;background-size: cover;}
+#banner .banner-img-wrap .banner-img2{background: url(../img/banner-img_2.jpg);left: 100%; background-size: cover;}
+#banner .banner-img-wrap .banner-img3{background: url(../img/banner-img_3.jpg);left: 200%; background-size: cover;}
+#banner .banner-img-wrap .banner-img4{background: url(../img/banner-img_4.jpg);left: 300%; background-size: cover;}
+#banner .banner-img-wrap .banner-img5{background: url(../img/banner-img_5.jpg);left: 400%; background-size: cover;}
+#banner .banner-img-wrap .banner-img strong{display: block;text-align: center;font-size: 70px;position: absolute;left: 50%;top: 43%;transform: translate(-50%,-40%); white-space: nowrap; opacity:0; transition:all .84s ease;}
+#banner .banner-img-wrap .banner-img em{text-align: center;display: block;margin-top: 20px;font-size: 18px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -40%); opacity:0; transition:all .84s .2s ease;}
+#banner .banner-img-wrap .banner-img.on strong,
+#banner .banner-img-wrap .banner-img.on em{opacity:1; transform:translate(-50%,-50%);}
+#banner .left-right-btn-wrap{position: absolute;width: 100%;height: 100%;}
+#banner .left-right-btn-wrap .prev{background: url(../img/arrow_left.png) no-repeat center center / 50% 50%;width: 60px;height: 116px;display: block;position: absolute;top: 50%;left: 30px;transform: translateY(-50%);z-index: 15;}
+#banner .left-right-btn-wrap .next{background: url(../img/arrow_right.png) no-repeat center center / 50% 50%;width: 60px;height: 116px;display: block;position: absolute;top: 50%;right: 30px;transform: translateY(-50%);z-index: 15;}
+#banner .slide-btn-wrap{position: absolute;bottom: 50px;z-index: 15;width: 100%;text-align: center;}
+#banner .slide-btn-wrap .slide-btn {display: inline-block;}
+#banner .slide-btn-wrap .slide-btn li{float: left;margin: 0 5px;}
+#banner .slide-btn-wrap .slide-btn li a{width: 20px;height: 10px;background: #ffffff;display: inline-block; transition: all .3s;}
+#banner .slide-btn-wrap .slide-btn li a.on{width: 70px;background: #8b5c49;}
+#banner .play-pause-btn{display: inline-block;margin-left: 10px;}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    /* 크롬 hack */
+    #banner .play-pause-btn{vertical-align: bottom;}
+}
+#banner .play-pause-btn a{color: #fff;float: left;font-size: 20px;position: relative;margin: 0 5px;top: 4px; transition: color .3s;}
+#banner .play-pause-btn a.on{color: #8b5c49;}
+
+/* 스페셜 오퍼 */
+#special-offers{padding: 100px 0;background: #374d70;}
+#special-offers .content-title,
+#roomsNsuites .content-title{color: #fff;font-size: 55px;text-align: center;font-weight: bold;}
+#special-offers .content-ul{margin-top: 50px;height: 700px;position: relative;overflow: hidden;}
+#special-offers .content-ul li{position: absolute;width: 25%;}
+#special-offers .content-ul li>a:hover .sub-text p.context{text-decoration: underline;}
+#special-offers .content-ul li .content-body .thumb-title{color: #fff;background: rgba(0,0,0,0.9);width: 80px;text-align: center;font-weight: bold;height: 60px;z-index: 50;vertical-align: middle;display: table-cell;position: relative;transform: translateY(20px);}
+#special-offers .content-ul li .content-body .thumb-wrap{position: relative;}
+#special-offers .content-ul li .content-body .thumb-wrap .thumb{display:block;}
+#special-offers .content-ul li .content-body .thumb-wrap:after{content: "";display: none;position: absolute;width: 100%;height: 100%;background: rgba(0,0,0,0.8) url(../img/plus-btn.png) no-repeat center / 25%;top: 0;left: 0;z-index: 40;}
+#special-offers .content-ul li .content-body .thumb-wrap:hover:after{display: block;}
+#special-offers .content-ul li .content-body .sub-text{margin-top: 40px;color: #fff;padding: 10px 15px 50px 15px;border-bottom: 1px solid #fff;}
+#special-offers .content-ul li .content-body .sub-text .context{font-size: 17px;font-weight: bold;}
+#special-offers .content-ul li .content-body .sub-text .term{margin-top: 20px;font-size: 15px;}
+#special-offers .content-ul li .content-body .sub-text .price{font-size: 15px;}
+#special-offers .arrow-btn-wrap{position: absolute;width: 100%;top: 50%;transform: translateY(-50%);}
+#special-offers .arrow-btn-wrap i{color: #fff;font-size: 40px;background: rgba(255,255,255,0.10);border-radius: 50%;width: 50px;height: 50px;line-height: 50px;text-align: center; transition:all .3s;}
+#special-offers .arrow-btn-wrap a:hover i{background:#3f5e89;}
+#special-offers .arrow-btn-wrap .left i{position: absolute;left: -100px;top: 0;}
+#special-offers .arrow-btn-wrap .right i{position: absolute;right: -100px;top: 0;}
+#special-offers .mobile-thumb{display: none;}
+
+/* 어바웃 비스타 */
+#about-vista{padding: 100px 0;background: url(../img/introduce-bg.jpg) no-repeat center top; background-size: cover;}
+#about-vista .left-con{float: left;width: 30%;}
+#about-vista .content-title strong{font-size: 45px;display: block;}
+#about-vista .left-con .content-title em{font-size: 20px;line-height: 130%;font-weight: 100;margin: 15px 0;display: block;font-size: 20px;}
+#about-vista .left-con .content-context{font-size: 17px;}
+#about-vista .right-con{width: 67%;padding: 10px 0;margin-left: 3%;float: left;border-bottom: 1px solid #333;}
+#about-vista .right-con h3{font-size: 20px;text-align: center;position: relative;}
+#about-vista .right-con h3:before{content: "";display: block;background: #333;width: 32.3333%;height: 1px;position: absolute;top: 15px;left: 0;}
+#about-vista .right-con h3:after{content: "";display: block;background: #333;width: 32.3333%;height: 1px;position: absolute;top: 15px;right: 0;}
+#about-vista .right-con ul.content-list{padding: 12px 20px;}
+#about-vista .right-con ul.content-list li{width: 25%;float: left;text-align: center;margin-top: 15px;padding-top: 75px;font-size: 15px;}
+#about-vista .right-con ul.content-list li.content-li-1{background: url(../img/vista-img-1.png) no-repeat center top / 64px;}
+#about-vista .right-con ul.content-list li.content-li-2{background: url(../img/vista-img-2.png) no-repeat center top / 64px;}
+#about-vista .right-con ul.content-list li.content-li-3{background: url(../img/vista-img-3.png) no-repeat center top / 64px;}
+#about-vista .right-con ul.content-list li.content-li-4{background: url(../img/vista-img-4.png) no-repeat center top / 64px;}
+#about-vista .right-con ul.content-list li.content-li-5{background: url(../img/vista-img-5.png) no-repeat center top / 64px;}
+#about-vista .right-con ul.content-list li.content-li-6{background: url(../img/vista-img-6.png) no-repeat center top / 64px;}
+#about-vista .right-con ul.content-list li.content-li-7{background: url(../img/vista-img-7.png) no-repeat center top / 64px;}
+
+/* 레스토랑 */
+#restaurant{position: relative;width: 100%;height: 850px;}
+#restaurant .content-title{width: 1000px;font-size: 55px;font-weight: bold;position: absolute;top: 100px;left: 50%;z-index: 50;transform: translateX(-50%);}
+#restaurant .slider-img-wrap li.slider-img{position: absolute;width: 100%;height: 100%;}
+#restaurant .slider-img-wrap li.slider-img-1{background: url(../img/restaurant-bg-1.jpg) center top;background-size: cover; display:block;}
+#restaurant .slider-img-wrap li.slider-img-2{background: url(../img/restaurant-bg-2.jpg) center top;background-size: cover; display:none;}
+#restaurant .slider-img-wrap li.slider-img-3{background: url(../img/restaurant-bg-3.jpg) center top;background-size: cover; display:none;}
+#restaurant .slider-img-wrap li.slider-img-4{background: url(../img/restaurant-bg-4.jpg) center top;background-size: cover; display:none;}
+#restaurant .slider-img-wrap li.slider-img-5{background: url(../img/restaurant-bg-5.jpg) center top;background-size: cover; display:none;}
+#restaurant .slider-context-wrap{position: relative;width: 1000px;height: 100%;margin: 0 auto;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context{position: absolute;width: 500px;height: 530px;background: rgba(255,255,255,0.90);right: 0;padding:40px 50px 30px 60px; box-sizing: border-box;top: 250px; display: none;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context-1{display: block;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .context-title em{font-size: 20px;display: block;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .context-title strong{display: block;font-size: 40px;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .info-text{margin-top: 15px;font-size: 17px;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .btn-wrap{margin-top: 40px;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .btn-wrap a{border: 1px solid #446176;color: #446176;background: #fff;padding: 5px 20px;font-size: 15px;font-weight: bold; transition:all .3s;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .btn-wrap a:hover{background:#446176; color:#fff;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .time-info{margin-top: 50px;color: #666;font-size: 15px;line-height: 200%;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .time-info dt{float: left;width: 100px;}
+#restaurant .slider-context-wrap .slider-context-con li.slider-context .time-info dd .color-em{color: #3f5e89;}
+#restaurant .slider-context-wrap .navi-wrap{position: absolute;right: 0;bottom: 100px;box-sizing: border-box;width: 500px;text-align: center;}
+#restaurant .slider-context-wrap .navi-wrap a{margin: 0 10px;}
+#restaurant .slider-context-wrap .navi-wrap a i{color: #666;vertical-align: middle;font-size: 20px;padding-top: 2px; transition:all .3s;}
+#restaurant .slider-context-wrap .navi-wrap a:hover i{color:#333;}
+#restaurant .slider-context-wrap .navi-wrap .numbering{display: inline-block;vertical-align: middle;color: #666;font-size: 16px;}
+#restaurant .slider-context-wrap .navi-wrap .numbering .current{color: #e07b46;}
+
+/* 왓츠뉴 */
+#whats-new{padding: 100px 0;background: url(../img/new-vista-bg.jpg) no-repeat top center;background-size: cover;background-attachment: fixed;overflow-x: hidden;}
+#whats-new .content-title{color: #fff;text-align: center;font-size: 55px;font-weight: bold;margin-bottom: 100px;}
+#whats-new .whats-new-content .new-cont{color: #fff; transition:all .85s; opacity:0;}
+#whats-new .whats-new-content .new-cont.scrollActive{opacity:1;}
+#whats-new .whats-new-content .new-cont-1{float: left;width: 470px;}
+#whats-new .whats-new-content .new-cont-2{float: right;width: 670px;margin-top: 300px;margin-right: -200px;}
+#whats-new .whats-new-content .new-cont-3{width: 990px;float: left;margin-top: 100px;margin-left: -100px;}
+#whats-new .whats-new-content .new-cont-4{width: 570px;float: right;margin-right: -50px;}
+#whats-new .whats-new-content .new-cont .cont-img{width: auto;}
+#whats-new .whats-new-content .new-cont .new-cont-tit{margin-top: 40px;font-size: 35px;font-weight: bold;}
+#whats-new .whats-new-content .new-cont .new-cont-tit em{display: block;margin-bottom: -5px;font-size: 20px;font-weight: normal;}
+#whats-new .whats-new-content .new-cont .new-cont-text{font-size: 15px;opacity: 0.7;}
+
+/* 비스타 맵 */
+#vista-map{background: #f5f5f5;padding: 100px 0;}
+#vista-map .content-title{font-size: 55px;text-align: center;font-size: 55px;font-weight: bold;margin-bottom: 50px;}
+#vista-map .vista-map-context{position: relative;height: 440px;}
+#vista-map .vista-map-context img{position: absolute;background: #fff;}
+#vista-map .vista-map-context .call-address-info{position: absolute;top: 50px;left: 50px;}
+#vista-map .vista-map-context .call-address-info dl {line-height: 200%;width: 500px;}
+#vista-map .vista-map-context .call-address-info dl dt{font-size: 15px;font-weight: bold;float: left;width: 96px;}
+#vista-map .vista-map-context .call-address-info dl dd{float: left;color: #666;font-size: 15px;width: 300px;position: relative;padding-left: 10px;}
+#vista-map .vista-map-context .call-address-info dl dd:before{content: "";position: absolute;left:0;top:50%; transform:translateY(-50%);width: 1px;height: 15px;background: #333;}
+#vista-map .vista-map-context .call-address-info a.share-location{margin-top: 30px;display: inline-block;border-radius: 15px;border: 1px solid #333;padding: 5px 10px;font-size: 14px; transition:all .3s;}
+#vista-map .vista-map-context .call-address-info a.share-location:hover{background:#333; color:#fff;}
+#vista-map .sns-wrap{margin-top: 40px;}
+#vista-map .sns-wrap .left-con{float: left;height: 250px;width: 60%;padding-top: 29px;}
+#vista-map .sns-wrap .left-con .mini-title{font-size: 28px;font-weight: bold;width: 48%;display: inline-block;text-align: center; position: relative;}
+#vista-map .sns-wrap .left-con .mini-title:after{content: "";width: 1px;height: 100%;background: #e3e3e3;position: absolute;right: 10px;}
+#vista-map .sns-wrap .left-con .sns-list{width: 51%;display: inline-block;}
+#vista-map .sns-wrap .left-con .sns-list li{display: inline-block;margin: 0 10px;}
+#vista-map .sns-wrap .left-con .sns-list li a i{font-size: 23px;border: 1px solid #999;color: #999;border-radius: 50%;width: 40px;height: 40px;display: table-cell;vertical-align: middle;text-align: center; transition:all .3s;}
+#vista-map .sns-wrap .left-con .sns-list li a:hover i{color:#dde1e6; background:#999;}
+#vista-map .sns-wrap .app-down-wrap{margin-top: 30px;display: inline-block;background: url(../img/app-down-bg.jpg);width: 596px;height: 100px;}
+#vista-map .sns-wrap .app-down-wrap p{padding: 21px 0 0 25px;color: #52453e;font-size: 24px;line-height: 30px;}
+#vista-map .sns-wrap .app-down-wrap span{color: #756964;font-size: 16px;}
+#vista-map .sns-wrap .right-con{float: left;overflow: hidden;width: 38%;margin-left: 20px;}
+#vista-map .sns-wrap .right-con li.award-con{border: 1px solid #999;width: 180px;height: 120px;margin: 0 5px;float: left;display: inline-block;box-sizing: border-box;}
+#vista-map .sns-wrap .right-con li.award-con strong{color: #999;display: block;text-align: center;font-size: 11px;}
+#vista-map .sns-wrap .right-con li.award-con em{display: block;text-align: center;color: #666;}
+#vista-map .sns-wrap .right-con li.award-con-1{background: #fff url(../img/award-1.png) no-repeat center 10px;padding-top: 70px;}
+#vista-map .sns-wrap .right-con li.award-con-2{background: #fff url(../img/award-2.png) no-repeat center;padding-top: 70px;}
+#vista-map .sns-wrap .right-con li.award-con-3{background: #fff url(../img/award-3.png) no-repeat center 20px;padding-top: 70px;}
+
+/* 미디어 쿼리 */
+@media (max-width: 1420px){
+    #whats-new .container{width:100%;}
+    #whats-new .whats-new-content .new-cont-1{width: 40%;margin: 0 3%;}
+    #whats-new .whats-new-content .new-cont-2{float: left;width: 50%;margin-right:0;}
+    #whats-new .whats-new-content .new-cont-3{width: 90%;float: left;margin-top: 100px;margin-left: 3%;}
+    #whats-new .whats-new-content .new-cont-4{width: 50%;margin-right: 3%;margin-top: 50px;}
+    #whats-new .whats-new-content .new-cont .cont-img{width:100%;}
+}
+@media (max-width: 1290px){
+    #banner .banner-img-wrap .banner-img strong{font-size: 50px;}
+    #special-offers .container{width: 85%;}
+    #special-offers .arrow-btn-wrap .left i{left:-65px;}
+    #special-offers .arrow-btn-wrap .right i{right:-65px;}
+}
+@media (max-width: 1024px){
+    #main .content-title,
+    #about-vista .content-title strong{font-size: 45px;}
+    #special-offers .content-ul li{width: 33.33333%;}
+    #special-offers .arrow-btn-wrap i{background:rgba(0,0,0,0.9); border:1px solid #fff; font-size: 30px;width: 40px;height: 40px;line-height: 40px;}
+    #special-offers .arrow-btn-wrap .left i{left:-7%;}
+    #special-offers .arrow-btn-wrap .right i{right:-7%;}
+    #special-offers .content-ul li .content-body .thumb-wrap:hover:after{display: none;}
+
+    #about-vista{padding:50px 0;}
+    #about-vista .row{padding:0 16px;}
+    #about-vista .left-con{width: 100%;}
+    #about-vista .right-con{width: 100%; margin: 50px 0 0 0;}
+    #about-vista .right-con h3:after,
+    #about-vista .right-con h3:before{width: 20%;}
+    #about-vista .right-con ul.content-list{padding:12px 0;}
+    #about-vista .right-con h3:after, #about-vista .right-con h3:before{height:0;}
+    #about-vista .right-con{border: 1px solid #333;}
+    #about-vista .right-con ul.content-list li{height: 100px; box-sizing: border-box;}
+
+    #restaurant{height:500px;}
+    #restaurant .content-title{position: relative;top: 0;text-align: center;margin: 70px 0;}
+    #restaurant .slider-context-wrap{width: 90%;}
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context{width:100%;height: auto;}
+    #restaurant .slider-context-wrap .navi-wrap{position: relative;top: -50px;border: 1px solid #446176;display: inline;padding: 10px 0;margin-left: -60px;left: 50%;}
+
+    #whats-new{margin-top:500px;}
+    #vista-map .row{padding:0 16px;}
+    #vista-map .sns-wrap .left-con{width:100%;}
+    #vista-map .sns-wrap .left-con .mini-title{width:50%;}
+    #vista-map .sns-wrap .left-con .sns-list{width: 49%; text-align: center;}
+    #vista-map .sns-wrap .app-down-wrap{  background: url(../img/app-down-bg.jpg) no-repeat center top;width: 100%;background-size: cover;}
+    #vista-map .sns-wrap .right-con{width:100%;margin:20px 0 0 0;}
+    #vista-map .sns-wrap .right-con li.award-con{width:31.3%; margin:0 1%; }
+    html .mt-10{margin-top:0 !important;}
+    #vista-map .vista-map-context .call-address-info a.share-location{margin-top:10px;}
+}
+@media (max-width: 960px){
+    #banner .banner-img-wrap .banner-img strong{font-size: 40px;white-space: normal;}
+    #banner .banner-img-wrap .banner-img em{transform: translate(-50%, -30%);}
+    #banner .banner-img-wrap .banner-img.on em{transform: translate(-50%, 120%);}
+    #banner{height: 500px;}
+}
+@media (max-width: 768px){
+    #main .content-title,
+    #about-vista .content-title strong{font-size: 40px;}
+    #special-offers .content-ul li{width: 50%;}
+    #about-vista .right-con ul.content-list li{width: 50%;}
+}
+@media (max-width: 600px){
+    #banner .banner-img-wrap .banner-img em{display: none;}
+    #special-offers .content-ul li{width: 100%;}
+    #special-offers .content-ul li{top:0 !important;}
+    #special-offers .thumb-wrap{display: none;}
+    #special-offers .mobile-thumb{display: block;}
+    #special-offers{padding:50px 0 0 0;}
+    #special-offers .content-ul{height: 560px; margin-top: 0;}
+
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context{padding:35px 20px;}
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context .context-title em{font-size:15px;}
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context .context-title strong{font-size: 30px;}
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context .info-text{font-size:15px;}
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context .btn-wrap a{font-size: 13px; padding:5px 4px;}
+    #restaurant .slider-context-wrap .slider-context-con li.slider-context .time-info{font-size: 14px;}
+
+    #whats-new .whats-new-content .new-cont{width: 90%;margin: 50px 5%;}
+    #whats-new .whats-new-content .new-cont .cont-img{width: 100%;display: block;margin: 0 auto;}
+    #vista-map{padding:50px 0;}
+    #vista-map .vista-map-context img{display:none;}
+    #vista-map .vista-map-context .call-address-info{top: 50%;left: 50%;transform: translate(-50%,-50%);}
+    #vista-map .vista-map-context .call-address-info dl{width:95%; margin:0 auto;}
+    #vista-map .sns-wrap .left-con .mini-title{width: 100%;}
+    #vista-map .sns-wrap .left-con .sns-list{width:100%; margin-top:10px;}
+    #vista-map .sns-wrap .left-con .mini-title:after{width:0;}
+    #vista-map .sns-wrap .app-down-wrap p{font-size: 20px;}
+    #vista-map .sns-wrap .app-down-wrap span{font-size: 14px; width:50%; display:block; line-height: 150%;margin-top: 10px; min-width: 200px;}
+    #vista-map .sns-wrap .app-down-wrap{height: 120px;}
+    #vista-map .sns-wrap .right-con li.award-con{width: 100%;margin:5px 0 0 0 !important;}
+}
+@media (max-width: 480px){
+    #main .content-title,
+    #about-vista .content-title strong{font-size: 35px;}
+    #banner .banner-img-wrap .banner-img strong{font-size:35px;}
+    #banner .left-right-btn-wrap .prev{left:0;height: 77px;width: 40px;}
+    #banner .left-right-btn-wrap .next{right:0;height: 77px;width: 40px;}
+}
+
+

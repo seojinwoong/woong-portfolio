@@ -1,0 +1,38 @@
+/* 푸터 */
+#footer{background: #272727;}
+#footer .footer-1{height: 50px;border-bottom: 1px solid #3d3d3d;}
+#footer .footer-1 .footer-menu-list {float: left;line-height: 50px;}
+#footer .footer-1 .footer-menu-list li{display: inline-block;padding: 0 15px;position: relative;}
+#footer .footer-1 .footer-menu-list li:after{content: "";background: #66676d;width: 1px;height: 20px;position: absolute;right: 0;top: 16px;}
+#footer .footer-1 .footer-menu-list li.last:after{width: 0;}
+#footer .footer-1 .footer-menu-list li a{color: #fff;font-size: 15px;opacity: 0.5;}
+#footer .footer-1 .footer-menu-list li.first{padding-left: 0;}
+#footer .footer-1 .footer-menu-list li.first a{opacity: 0.8;}
+#footer .footer-1 .pay-online-btn{float: left;margin-left: 25px;background: #263239;line-height: 50px;color: #f5f5f5;width: 160px;text-align: center;font-size: 15px;}
+#footer .footer-2{padding: 30px 0;border-bottom: 1px solid #3d3d3d;}
+#footer .footer-2 .footer-logo{float: left;}
+#footer .footer-2 .company-info{float: left;margin-left: 50px;color: #fff;opacity: 0.3;}
+#footer .footer-2 .sns-siteMap{float: left;margin-left: 50px;}
+#footer .footer-2 .sns-siteMap .sns-list-wrap{text-align: center;}
+#footer .footer-2 .sns-siteMap .sns-list-wrap li{display: inline-block;margin: 0 10px;}
+#footer .footer-2 .sns-siteMap .sns-list-wrap li a i{background: #606060;border-radius: 50%;width: 35px;height: 35px;text-align: center;display: table-cell;vertical-align: middle;font-size: 20px;}
+#footer .footer-2 .sns-siteMap #siteMap{margin-top: 20px;margin-left: 10px;border: 1px solid #515151;background: #272727;color: #999;height: 38px;box-sizing: border-box;padding-left: 7px;}
+#footer .footer-3{padding: 30px 0;}
+#footer .footer-3 li{float: left;opacity: 0.5;padding-right: 30px;}
+#footer .footer-3 li.last{padding-right: 0;}
+
+/* TOP버튼 */
+.go-top{position: fixed;bottom: 50px;right: 10%; display: none;}
+.go-top i{color: #fff;font-size: 30px;background: rgba(0,0,0,0.8);padding: 10px;border-radius: 50%;width: 40px;height: 40px;text-align: center;display: table-cell;vertical-align: middle;}
+
+@media (max-width: 1024px){
+    #footer .row{padding: 0 16px;}
+    .go-top i{ width:30px; height: 30px;}
+    #footer .footer-1{display: none;}
+    #footer .footer-2{text-align: center;}
+    #footer .footer-2>*{float: none !important;}
+    #footer img{width:auto;}
+    #footer .footer-2 .company-info,#footer .footer-2 .sns-siteMap{margin:20px 0;}
+    #footer .footer-2 .sns-siteMap #siteMap{margin-left:0;}
+    #footer .footer-3 li{width:50%; text-align: center; padding:0; height:50px;line-height: 50px;}
+}
